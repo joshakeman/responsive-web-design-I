@@ -1,3 +1,397 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+strong {
+	font-weight: bold;
+  }
+
+footer {
+	padding: 20px 0;
+	margin: 20px 0;
+}
+footer p {
+		text-align: center;
+	}
+
+ul.list {
+		list-style-type: square;
+		list-style-position: inside;
+		line-height: 1.75;
+	}
+
+.container {
+	width: 875px;
+	margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+	.container {
+		width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+}
+
+@media(max-width: 500px) {
+	.container {
+		width: 500px;
+		padding: 0px;
+	}
+}
+.nav-div {
+	margin-top:20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+	.nav-div {
+		margin-top:20px;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+.main-nav a {
+	margin: 20px;
+	text-decoration: none;
+	color: #b3b3b3;
+}
+
+@media(max-width: 800px) {
+	.main-nav {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media(max-width: 500px) {
+	.main-nav {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media(max-width: 500px) {
+	.main-nav {
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid black;
+	}
+}
+
+@media(max-width: 800px) {
+	.main-nav a {
+		margin: 20px 36px;
+	}
+}
+
+@media(max-width: 500px) {
+	.main-nav a {
+		margin: 0px;
+		padding: 20px 0;
+		font-size: 26px;
+		border-top: 1px solid black;
+	}
+}
+
+.nav-div .logo {
+	/*display: inline-block;
+	margin-left: 100px;*/
+}
+
+@media(max-width: 800px) {
+	.nav-div .logo {
+		margin-bottom: 40px;
+	}
+}
+
+.header.home {
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+	.header-home {
+		padding: 20px;
+		width: 100%;
+	}
+}
+
+.header.services {
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.header-left {
+	font-size: 80px;
+	text-align: center;
+	padding: 50px 0px 50px 50px;
+	width: 45%;
+}
+
+@media(max-width: 800px) {
+	.header-left {
+		width: 90%;
+	}
+}
+
+.header-right {
+	width: 45%;
+}
+
+@media(max-width: 800px) {
+	.header-right {
+		display: none;
+	}
+}
+
+.header-button {
+	text-align: center;
+	padding: 10px 50px 10px 50px;
+	font-size: 18px;
+	background: white;
+	border: 1px solid black;
+}
+
+.top-home {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+	.top-home {
+		padding: 20px;
+	}
+}
+@media(max-width: 500px) {
+	.top-home {
+		padding: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.features-p {
+	width: 49%;
+}
+
+@media(max-width: 500px) {
+	.features-p {
+		width: 95%;
+		margin: 20px 0;
+	}
+}
+
+.about-p {
+	width: 49%;
+}
+
+@media(max-width: 500px) {
+	.about-p {
+		width: 95%;
+		margin: 20px 0;
+	}
+}
+
+.middle-home {
+	padding: 20px 0;
+}
+
+@media(max-width: 800px) {
+	.middle-home {
+		padding: 20px;
+	}
+}
+
+@media(max-width: 800px) {
+	.middle-home img {
+		width: 100%;
+	}
+}
+
+@media(max-width: 500px) {
+	.middle-home img {
+		width: 100%;
+	}
+}
+
+.bottom-home {
+	padding: 20px 0;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+	.bottom-home {
+		padding: 20px;
+	}
+}
+
+@media(max-width: 500px) {
+	.bottom-home {
+		padding: 20px;
+		flex-direction: column;
+	}
+}
+
+.services-p {
+	width: 32%;
+}
+
+@media(max-width: 500px) {
+	.services-p {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
+.product-p {
+	width: 32%;
+}
+
+@media(max-width: 500px) {
+	.product-p {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
+.vision-p {
+	width: 32%;
+}
+
+@media(max-width: 500px) {
+	.vision-p {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
+.main-services-p {
+	padding: 20px 0 20px;
+}
+
+.main-services-p strong {
+	font-size: 22px;
+}
+.contact {
+	padding: 20px 0;
+}
+@media(max-width: 500px) {
+	.contact {
+		width: 100%;
+		padding: 20px;
+	}
+}
 
 
+.middle-services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid black;
+}
+
+.bottom-services {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	margin: 20px 0 40px;
+}
+
+.half-pg-block {
+	background: #F0F0F0;
+	border: 1px solid black;
+	width: 48%;
+	padding: 20px 20px 10px 20px;
+	margin-bottom: 20px;
+}
+
+.half-pg-block-plain {
+	width: 48%;
+	padding: 20px 0 20px;
+	margin-bottom: 20px;
+}
+
+.learn-more-btn {
+	margin: 20px 0 10px;
+	padding: 10px 40px 10px;
+	background: white;
+	border-radius: 10px;
+}
